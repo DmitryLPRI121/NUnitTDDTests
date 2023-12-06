@@ -18,17 +18,6 @@ namespace NUnitTDDTests
             calculator = new Calculator();
         }
 
-        [TestCase(2, 3, 5)]
-        [TestCase(-2.5, 3, 0.5)]
-        [TestCase(2, -3.9, -1.9)]
-        [TestCase(-4, -1.1, -5.1)]
-        [TestCase(0, 0, 0)]
-        public void TestAdd(double a, double b, double expected)
-        {
-            var result = calculator.Add(a, b);
-            Assert.AreEqual(expected, result);
-        }
-
         [TestCase(25, 5, 5)]
         [TestCase(5, 2.5, 2)]
         [TestCase(-1, 5, -0.2)]

@@ -11,12 +11,6 @@ namespace NUnitTDDTests
 {
     internal class Calculator
     {
-
-        public double Add(double a, double b)
-        {
-            return a + b;
-        }
-
         public double Div(double a, double b)
         {
             if (Math.Abs(b) < double.Epsilon)
